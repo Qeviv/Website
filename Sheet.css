@@ -1,0 +1,90 @@
+body{
+     font-family: "Bree Serif";
+     background-color: rgb(150,100,100);
+     
+}
+header{
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    margin: 10px;
+}
+#menu{
+    display: grid;
+    /* funkcja repeat(kolumny, szerokosc)*/
+    grid-template-columns: repeat(6, 1fr);
+    clear:both;
+    border: 1px solid black;
+    margin: 10px auto;
+    width: 40%;
+}
+.menu-box{
+    text-align: center;
+    border: 1px solid black;
+    padding: 2px;
+    overflow: hidden;
+}
+.container {
+    /*1fr x2 = dwie takie same kolumny*/
+    margin: 0 100px;
+    background: red;
+}
+.primary{
+    display: grid;
+    width: 80%;
+    float: left;
+}
+.secondary{
+    display: grid;
+    width: 20%;
+    float: left;
+}
+.rightSideBar{
+    background: #111;
+    color: #fff;
+    border: 1px solid white;
+    margin: 0 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.box{  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: #111;
+    color: #fff;
+    border: 1px solid white;
+    margin: 0 2px;
+    border-bottom-left-radius:  10px;
+    border-bottom-right-radius:  10px;
+    border-top-left-radius: 10px;
+    padding: 10px;  
+    margin-bottom: 5px; 
+}
+li.point
+{
+    padding: auto;
+}
+.boxWithImage{
+    width: 96%;
+    float: left; 
+    padding: 1%;
+
+}
+.boxWithImage > img{
+    width: 100%;
+    background-size: cover;
+} 
+.box:nth-of-type(1) .boxWithImage:nth-of-type(2){
+    font-size: 25px; 
+}
+a{
+    color: #1a0dab;
+    text-decoration: none;
+}
+a:visited{
+    color: red;
+}
+hr{
+    width: 100%;
+    border-radius: 60%;
+}

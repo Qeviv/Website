@@ -1,0 +1,50 @@
+body
+{
+	background: rgb(100,150,180);
+}
+header{
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    margin: 10px;
+}
+#container-everything
+{
+	width: 100%;
+}
+#menu{
+    display: grid;
+    /* funkcja repeat(kolumny, szerokosc)*/
+    grid-template-columns: repeat(6, 1fr);
+    clear:both;
+    border: 1px solid black;
+    margin: 10px auto;
+    width: 55%;
+}
+.menu-box{
+    text-align: center;
+    border: 1px solid black;
+    padding: 2px;	
+    overflow: hidden;
+
+}
+
+.container
+{
+	width: 50%;
+	margin: auto;
+}
+.container-logowanie 
+{
+	padding: 10px;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	background: rgb(150,200,250);
+	overflow: hidden;
+}
+.container-logowanie > form
+{
+	margin: 0 25%;
+}
